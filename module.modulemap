@@ -1,0 +1,4 @@
+module SwiftOpenGL [system] {
+  link "/usr/local/lib/libglfw.so"
+  export *
+}
