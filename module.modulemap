@@ -1,4 +1,5 @@
 module SwiftOpenGL [system] {
+  header "/usr/local/include/GLFW/glfw3.h"
   link "/usr/local/lib/libglfw.so"
   export *
 }
