@@ -1,5 +1,15 @@
 module SwiftOpenGL [system] {
+  header "/home/ngocpt/Work/Free/Wrap/include/glad/glad.h"
+  header "/home/ngocpt/Work/Free/Wrap/include/KHR/khrplatform.h"
   header "/usr/local/include/GLFW/glfw3.h"
+  header "/usr/include/GL/gl.h"
   link "/usr/local/lib/libglfw.so"
+  link "/home/ngocpt/Work/Free/Wrap/libglad.so"
+  link "GL"
+  link "X11"
+  link "pthread"
+  link "Xrandr"
+  link "dl"
+  link "m"
   export *
 }
