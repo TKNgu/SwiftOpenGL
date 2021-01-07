@@ -1,5 +1,5 @@
 module SwiftOpenGL [system] {
-  macros.h
+  header "macros.h"
   link "libtest.so"
   module glfw {
     header "/usr/local/include/GLFW/glfw3.h"
