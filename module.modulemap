@@ -1,6 +1,7 @@
 module SwiftOpenGL [system] {
   header "/usr/local/include/GLFW/glfw3.h"
   header "/usr/local/include/glfw3native.h"
+  header "/usr/include/GL/gl.h"
   link "glfw3"
   link "GL"
   link "X11"
