@@ -1,5 +1,4 @@
 module SwiftOpenGL [system] {
-  header "macros.h"
   module glfw {
     header "/usr/local/include/GLFW/glfw3.h"
     link "/usr/local/lib/libglfw.so"
