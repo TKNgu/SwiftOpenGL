@@ -1,7 +1,19 @@
 module SwiftOpenGL [system] {
-  header "/usr/local/include/GLFW/glfw3.h"
-  header "/usr/local/include/glfw3native.h"
-  header "/usr/include/GL/gl.h"
+  header "macros.h"
+  module glfw {
+    header "/usr/local/include/GLFW/glfw3.h"
+    header "/usr/local/include/glfw3native.h"
+  }
+
+  module gl {
+      header "/usr/include/GL/gl.h"
+      header "/usr/include/GL/glext.h"
+  }
+
+  module glx {
+      header "/usr/include/X11/X.h"
+      header "/usr/include/GL/glx.h"
+  }
   link "glfw3"
   link "GL"
   link "X11"
@@ -9,5 +21,6 @@ module SwiftOpenGL [system] {
   link "Xrandr"
   link "Xi"
   link "dl"
+  link "GL"
   export *
 }
