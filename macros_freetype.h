@@ -1,2 +1,2 @@
-#include <freetype2/ft2build.h>
-#include FT_FREETYPE_H 
+#include <freetype/config/ftheader.h>
+#include FT_FREETYPE_H
