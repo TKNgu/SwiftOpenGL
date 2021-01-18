@@ -1,14 +1,14 @@
 module SwiftOpenGL [system] {
   module glfw {
     header "macros_glfw.h"
-    link "/usr/local/lib/libglfw.so"
+    link "glfw"
   }
   module gl {
     link "GL"
   }
   module freetype {
     header "macros_freetype.h"
-    link "/usr/local/lib/libfreetype.so"
+    link "freetype"
   }
   export *
 }
